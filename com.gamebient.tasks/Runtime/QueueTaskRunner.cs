@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace GameBient.Tasks
 {
+    /// <summary>
+    /// TaskRunner which implements use of a Queue (Runs tasks in FILO order).
+    /// </summary>
     public class QueueTaskRunner : TaskRunner
     {
         readonly Queue<IEnumerator> tasks;

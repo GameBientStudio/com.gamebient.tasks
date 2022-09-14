@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace GameBient.Tasks
 {
+    /// <summary>
+    /// TaskRunner which implements use of a Stack (Runs tasks in FIFO order).
+    /// </summary>
     public class StackTaskRunner : TaskRunner
     {
         readonly Stack<IEnumerator> tasks;
