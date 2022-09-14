@@ -16,12 +16,9 @@ namespace GameBient.Tasks
         float startTime;
 
 
-        public TaskRunner()
-        {
-            minimumTimeToRun = 0;
-        }
+        public TaskRunner() : this(0f) { }
 
-        public TaskRunner(float minimumTimeToRun) : this()
+        public TaskRunner(float minimumTimeToRun)
         {
             this.minimumTimeToRun = minimumTimeToRun;
         }

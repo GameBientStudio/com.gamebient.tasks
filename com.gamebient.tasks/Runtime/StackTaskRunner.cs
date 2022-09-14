@@ -11,7 +11,9 @@ namespace GameBient.Tasks
     {
         readonly Stack<IEnumerator> tasks;
 
-        StackTaskRunner()
+        public StackTaskRunner() : this(0f) { }
+
+        public StackTaskRunner(float minimumTimeToRun) : base(minimumTimeToRun)
         {
             tasks = new();
         }

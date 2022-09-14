@@ -11,7 +11,9 @@ namespace GameBient.Tasks
     {
         readonly Queue<IEnumerator> tasks;
 
-        QueueTaskRunner()
+        public QueueTaskRunner() : this(0f) { }
+
+        public QueueTaskRunner(float minimumTimeToRun) : base(minimumTimeToRun)
         {
             tasks = new();
         }
